@@ -6,4 +6,17 @@ edit_uri: tree/main/docs
 theme: 
   name: material
   language: pt-BR
-  
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+plugins: 
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [gf_http_service]
